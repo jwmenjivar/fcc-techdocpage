@@ -1,0 +1,69 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100%;
+}
+#navbar{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    border:3px solid gainsboro;
+    position: fixed;
+    left: 0;
+    height:100vh
+    
+}
+header{
+    /*border: 2px solid green;*/
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.nav-link{
+    padding: 10px;
+    text-decoration: none;
+    padding-left: 30px;
+    border: 1px solid gainsboro;
+
+}
+
+#main-doc{
+    display: flex;
+    flex:4;
+    margin-left: 300px;
+}
+p{
+    margin-left: 35px;
+    line-height: 1.6;
+}
+ul{
+    margin-left: 55px;
+    line-height: 1.6;
+}
+code{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: gainsboro;
+    padding: 20px;
+    margin: 20px;
+    display: block;
+}
+/* mediaquery*/
+@media only screen and (max-width: 500px) {
+    body {
+      
+      display: flex;
+      flex-direction: column;
+    }
+    #navbar{
+        position: static;
+    }
+    #main-doc{
+        margin-left: 0;
+    }
+  }
